@@ -1,0 +1,109 @@
+@font-face{
+    src: url("font/Oxygen-Regular.ttf");
+    font-family: Okasha;
+}
+@font-face{
+    src: url("font/Philosopher-Italic.ttf");
+    font-family: tanoli;
+}
+body{
+    height: 550px;
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(163, 152, 152));
+}
+.hh{
+    background-color: rgba(145, 142, 142, 0.527);
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+
+    
+}
+.calculator{
+    margin-top: 40px !important;
+    width: 320px;
+    margin: 0 auto;
+    background-image: url("images/backgr.jpg");
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.resultScreen{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+#input{
+    width: 92%;
+    padding-top: 30px;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: tanoli;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    cursor: default;
+}
+.buttons{
+    margin-top: 30px !important;
+}
+#input:focus{
+    outline: none;
+    border: none;
+    cursor: default;
+}
+.buttonsRow{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonsRow div{
+    width: 27%;
+    padding: 17px;
+    font-family: Okasha;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    color: rgb(34, 253, 169);
+    transition: .3s;
+    box-shadow: 0 0 10px black;
+
+}
+
+.red{
+    background-color: rgb(105, 3, 3);
+    color: rgb(255, 255, 255) !important;
+}
+.lightRed{
+    background-color: rgb(253, 33, 33);
+    color: white !important;
+}
+.color{
+    background-image: linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)) !important;
+    color: white !important;
+    /* box-shadow: 0 0 5px black; */
+}
+
+.padding{
+    width:77.5% !important;
+    background-color: rgb(55, 0, 255)  !important;
+    color: white !important;
+    /* box-shadow: 0 0 5px black; */
+
+}
+.padd1,.padd2{
+    width:22.5% !important;
+    /* box-shadow: 0 0 5px black; */
+
+}
+.padd1{
+    font-size: 38px !important;
+    padding-top: 0px !important;
+    padding-bottom: 15px !important;
+}
+.buttons{
+    margin-top: 50px;
+}
+

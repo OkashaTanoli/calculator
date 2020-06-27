@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="hh">
+        <div class="resultScreen" id="resultScreen"><input type="text" id="input" placeholder = "0"></div>
+        <div class="buttons">
+            <div class="buttonsRow">
+                <div class="red" onclick = "clearInput()">C</div>
+                <div class="lightRed" onclick=" lastDelete()">Ce</div>
+                <div  onclick = "calculation('%')" class="color">%</div>
+                <div  onclick = "calculation('/')" class="color">&#247</div>
+            </div>
+            <div class="buttonsRow">
+                <div  onclick = "calculation('7')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">7</div>
+                <div  onclick = "calculation('8')"onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">8</div>
+                <div  onclick = "calculation('9')"onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">9</div>
+                <div  onclick = "calculation('*')"class="color">x</div>
+            </div>
+            <div class="buttonsRow">
+                <div  onclick = "calculation('4')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">4</div>
+                <div  onclick = "calculation('5')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">5</div>
+                <div  onclick = "calculation('6')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">6</div>
+                <div  onclick = "calculation('-')" class="color">-</div>
+            </div>
+            <div class="buttonsRow">
+                <div  onclick = "calculation('1')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">1</div>
+                <div  onclick = "calculation('2')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">2</div>
+                <div  onclick = "calculation('3')" onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">3</div>
+                <div  onclick = "calculation('+')" class="color">+</div>
+            </div>
+            <div class="buttonsRow">
+                <div  onclick = "calculation('.')" class="padd1"  onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">.</div>
+                <div  onclick = "calculation('0')" class="padd2"  onmouseover="this.style.backgroundImage= ('linear-gradient(rgb(253, 97, 7),rgb(255, 155, 4)');  this.style.color = 'white'" onmouseout="this.style.backgroundImage = 'none';  this.style.color = 'rgb(34, 253, 169)'">0</div>
+                <div class="padding" onclick="result()">=</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
